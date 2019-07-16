@@ -26,13 +26,13 @@ class Counter extends React.Component {
   };
   render() {
     return (
-      <section>
+      <React.Fragment>
         <h3>{this.state.mainText}</h3>
 
         <p> {this.state.count}</p>
         <button onClick={this.incrementCounter}>+</button>
         <button onClick={this.decrementCounter}>-</button>
-      </section>
+      </React.Fragment>
     );
   }
 }
